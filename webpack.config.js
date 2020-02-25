@@ -20,7 +20,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './index.pug',
+            template: '../src/pages/index/index.pug',
             filename: 'index.html'
 
         })],

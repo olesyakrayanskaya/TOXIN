@@ -1,3 +1,1 @@
-console.log('test webpack');
-import './css.css';
-import './style.scss';
+import '../src/theme/global.scss'
