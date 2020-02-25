@@ -1,7 +1,7 @@
-$color-sect: #5b5b6b;
+@import "~normalize.css";
+@import "./fonts.scss";
 
-.container {
-    background-color: $color-sect;
-    width: 50%;
-    height: 20vh;
+html, body {
+    box-sizing: border-box;
 }
+
