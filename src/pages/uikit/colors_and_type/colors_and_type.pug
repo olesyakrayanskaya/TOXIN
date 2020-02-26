@@ -3,16 +3,57 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title webpack-start-pug
+        title colors and type
 
     body
-      h1 WEBPACK
-      .container
-        ul
-          li.item
-            p Lorem ipsum dolor sit amet consectetur.
-          li.item
-            p Lorem ipsum dolor sit amet.
-          li.item
-            p Lorem ipsum dolor sit amet consectetur adipisicing.
-        
+      .color-type
+        include ../../../components/logo/logo.pug
+        .color-type__container
+          ul.color-type__color-list
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+                  span.color__name
+                  span.color__code
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description
+            li.color-type__item
+              .color-type__item__content
+                .color
+                .color__description 
+          ul.color-type__fonts-list
+            color-type__font-list__item
+              color-type__font-list__item__content
+                span(class="text-name")
+                span(class="text-description")
+            color-type__font-list__item
+              color-type__font-list__item__content
+                span(class="text-name")
+                span(class="text-description")
+            color-type__font-list__item
+              color-type__font-list__item__content
+                span(class="text-name")
+                span(class="text-description")
+            color-type__font-list__item
+              color-type__font-list__item__content
+                span(class="text-name")
+                span(class="text-description")
