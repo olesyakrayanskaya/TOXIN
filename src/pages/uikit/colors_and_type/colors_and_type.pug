@@ -1,59 +1,48 @@
+mixin color-block(data)
+  .color-block
+    .color-block__box(style="background-color: " + data.code + " ;opacity: "  + data.opacity)
+    .color-block__descript
+      span.color-name= data.name
+      span.color-code= data.code
+
+-
+  var color_array = [
+    {name: 'Dark Shade 100%', code: '#1F2041', opacity: 1},
+    {name: 'Dark Shade 75%', code: '#1F2041', opacity: 0.75},
+    {name: 'Dark Shade 50%', code: '#1F2041', opacity: 0.5},
+    {name: 'Dark Shade 25%', code: '#1F2041', opacity: 0.25},
+    {name: 'Dark Shade 5%', code: '#1F2041', opacity: 0.05},
+    {name: 'Purple', code: '#BC9CFF', opacity: 1},
+    {name: 'Green', code: '#6FCF97', opacity: 1}
+  ]
+
+mixin font-block(textdata)
+    .font-block
+      p.font-block__text-name(class=textdata.name+"-subclass-name")= textdata.name
+      p.font-block__text-description(class=textdata.name+"-subclass-desc")= textdata.description
+
+-
+  var texttype_array = [
+    {name: 'H1', description: 'This one is the sub-section or widget title'},
+    {name: 'H2', description: 'Next one is the item title inside widgets'},
+    {name: 'H3', description: 'This is a label or CTA text'},
+    {name: 'Body', description: 'This is the body text which is used for most of the design, like paragraphs, lists, etc'}
+  ]
+
 <!DOCTYPE html>
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title colors and type
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title colors and type
 
-    body
-      .color-type
-        include ../../../components/logo/logo.pug
-        .color-type__container
-          ul.color-type__color-list
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-                  span.color__name
-                  span.color__code
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description
-            li.color-type__item
-              .color-type__item__content
-                .color
-                .color__description 
-          ul.color-type__fonts-list
-            color-type__font-list__item
-              color-type__font-list__item__content
-                span(class="text-name")
-                span(class="text-description")
-            color-type__font-list__item
-              color-type__font-list__item__content
-                span(class="text-name")
-                span(class="text-description")
-            color-type__font-list__item
-              color-type__font-list__item__content
-                span(class="text-name")
-                span(class="text-description")
-            color-type__font-list__item
-              color-type__font-list__item__content
-                span(class="text-name")
-                span(class="text-description")
+  body     
+    .color-type
+      include ../../../components/logo/logo.pug
+      .color-type__container
+        .color-list
+          each elem in color_array
+            +color-block(elem)
+        .fonts-list
+          each elem, index in texttype_array
+            +font-block(elem)
