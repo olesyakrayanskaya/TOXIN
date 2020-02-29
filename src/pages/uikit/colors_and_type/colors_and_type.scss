@@ -1,151 +1,160 @@
 .color-type {
-  padding-left: 40px;
-  padding-top: 48px;
-  max-width: 1440px;
+    padding-left: 40px;
+    padding-top: 48px;
+    max-width: 1440px;
+    margin: 0 auto;
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
 }
 
 .color-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 67px;
-  margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 67px;
+    margin-left: 120px;
 }
 
 .color-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-
-  &__box {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
-  }
-
-  &__descript {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    margin-left: 37px;
-    margin-top: 8px;
-  }
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    &__box {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+    }
+
+    &__descript {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 37px;
+        margin-top: 8px;
+    }
 }
 
 .color-name,
 .color-code {
-  font-family: "Quicksand-Bold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 29px;
-  color: #1f2041;
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1f2041;
 }
 
 .fonts-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 67px;
 }
 
 .font-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 
-  &__text-name {
-      margin-right: 32px;
-  }
+    &__text-name {
+        margin-right: 32px;
+    }
 
-  &__text-description {
-    width: 336px;
-  }
+    &__text-description {
+        width: 336px;
+    }
+
+    @media screen and (max-width: 450px){
+      justify-content: flex-start;
+    }
 }
 
 .H1-subclass-name {
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
 }
 
 .H2-subclass-name {
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 23px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
 }
 
 .H3-subclass-name {
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 10px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.25);
+    margin-left: 10px;
 }
 
 .Body-subclass-name {
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
 }
 
 .H1-subclass-desc {
-  font-family: "Quicksand-Bold";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1f2041;
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
 }
 
 .H2-subclass-desc {
-  font-family: "Quicksand-Bold";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1f2041;
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1f2041;
 }
 
 .H3-subclass-desc {
-  font-family: "Quicksand-Bold";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #1f2041;
-  text-transform: uppercase;
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1f2041;
+    text-transform: uppercase;
 }
 
 .Body-subclass-desc {
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
 }
