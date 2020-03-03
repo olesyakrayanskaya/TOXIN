@@ -1,0 +1,15 @@
+-
+  var nav_list_array = [
+    {name:"Home", classes:"nav-header__link_active", link:"http://"},
+    {name:"About Us", link:"http://"},
+    {name:"Services", classes:"nav-header__link_with-drop-down-menu", link:"http://"},
+    {name:"Careers", link:"http://"},
+    {name:"News", link:"http://"},
+    {name:"Documentation", link:"http://"}
+  ]
+
+nav.nav-header
+  ul.nav-header__list
+    each val in nav_list_array
+      li.nav-header__item
+        a.nav-header__link(href=val.link class=val.classes)= val.name

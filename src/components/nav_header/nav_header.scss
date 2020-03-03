@@ -1,0 +1,43 @@
+.nav-header {
+  width: 527px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+
+    &_active {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    &_with-drop-down-menu {
+        position: relative;
+        margin-right: 15px;
+    }
+
+    &_with-drop-down-menu::after {
+      content: "\e5cf";
+      position: absolute;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+}
