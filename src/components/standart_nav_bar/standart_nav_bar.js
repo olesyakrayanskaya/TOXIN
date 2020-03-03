@@ -1,0 +1,1 @@
+import './standart_nav_bar.scss'
