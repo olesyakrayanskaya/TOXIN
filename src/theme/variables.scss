@@ -1,0 +1,51 @@
+$primary-color: #bc9cff;
+$secondary-color: #6fcf97;
+$dark100-color: #1f2041;
+$dark75-color: rgba(31, 32, 65, 0.75);
+$dark50-color: rgba(31, 32, 65, 0.5);
+$dark25-color: rgba(31, 32, 65, 0.25);
+$dark5-color: rgba(31, 32, 65, 0.05);
+
+$xxs: 320px;
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1199px;
+$xl: 1440px;
+
+@mixin H1-text {
+  font-family: Quicksand, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+}
+
+@mixin H2-text {
+  font-family: Quicksand, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1f2041;
+}
+
+@mixin H3-text {
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+@mixin body-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
