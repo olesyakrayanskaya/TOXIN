@@ -13,6 +13,7 @@
    text-transform: uppercase;
    color: #BC9CFF;
    margin: 2px;
+
    
    &::before {
        content: '';
@@ -21,7 +22,7 @@
        border-radius: 22px;
        background-image: linear-gradient(to top, #8BA4F9, #BC9CFF);
        position: absolute;
-       z-index: -1;
+       z-index: -10;
        left: -2px;
        top: -2px;   }
 

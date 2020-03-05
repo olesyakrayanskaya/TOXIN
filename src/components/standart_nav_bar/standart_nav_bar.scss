@@ -1,23 +1,34 @@
 .standart-nav-bar {
-    width: 100%;
-    height: 70px; 
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);   
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin: 0 auto;
 
-    &__container {
-        max-width: 1160px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 20px;
-        margin: 0 auto;    
+  &__container {
+    max-width: 1160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
 
-    }
-      &__login-block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 200px;
-      }
+  &__logo {
+    flex: 2 1 auto;
+  }
+
+  &__menu {
+    padding-right: 29px;
+    padding-top: 11px;
+  }
+
+  &__login-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    padding-top: 2px;
+    z-index: 1000;
+  }
 }
-
