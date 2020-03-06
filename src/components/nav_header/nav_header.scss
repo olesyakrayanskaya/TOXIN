@@ -1,3 +1,5 @@
+@import '../../theme/variables.scss';
+
 .nav-header {
   width: 527px;
 
@@ -8,20 +10,20 @@
   }
 
   &__link {
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $dark50-color;
 
     &_active {
-      font-family: Montserrat;
+      font-family: Montserrat, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
       line-height: 17px;
-      color: rgba(31, 32, 65, 0.75);
+      color: $dark75-color;
     }
 
     &_with-drop-down-menu {
@@ -37,7 +39,7 @@
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: rgba(31, 32, 65, 0.5);
+      color: $dark50-color;
     }
   }
 }

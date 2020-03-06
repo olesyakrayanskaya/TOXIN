@@ -1,3 +1,5 @@
+@import '../../theme/variables.scss';
+
 .login-button {
    width: 74px;
    height: 30px;
@@ -11,7 +13,7 @@
    font-size: 12px;
    line-height: 15px;
    text-transform: uppercase;
-   color: #BC9CFF;
+   color: $primary-color;
    margin: 2px;
 
    
