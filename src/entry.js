@@ -13,3 +13,5 @@ import './components/register_button/register_button'
 import './components/nav_header/nav_header'
 import './components/standart_nav_bar/standart_nav_bar'
 import './components/standart_logged_in_nav_bar/standart_logged_in_nav_bar'
+import './components/ui_kit_pages_template/ui_kit_pages_template'
+
