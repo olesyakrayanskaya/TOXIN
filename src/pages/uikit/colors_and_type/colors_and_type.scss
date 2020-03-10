@@ -1,163 +1,162 @@
-@import '../../../theme/variables.scss';
+@import "../../../theme/variables.scss";
 
 .color-type {
-    padding-left: 40px;
-    padding-top: 48px;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding-left: 40px;
+  padding-top: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
 
-    &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin: 0 auto;
-        flex-wrap: wrap;
-    }
+  &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 auto;
+      flex-wrap: wrap;
+  }
 }
 
 .color-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 67px;
-    margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 67px;
+  margin-left: 120px;
 }
 
 .color-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 
-    &__box {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-    }
+  &__box {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+  }
 
-    &__descript {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 37px;
-        margin-top: 8px;
-    }
-}
-
-.color-name {
-    font-family: Quicksand, Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 29px;
-    letter-spacing: 0.15px;
-    color: $dark100-color;
-}
-
-.color-code {
-    font-family: Quicksand, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 29px;
-    letter-spacing: 0.15px;
-    color: $dark100-color;
-}
-
-.fonts-list {
+  &__descript {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: nowrap;
-    max-width: 425px;
-    margin-top: 60px;
+    margin-left: 37px;
+    margin-top: 8px;
+  }
+}
+
+.color-name {
+  font-family: Quicksand, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+  letter-spacing: 0.15px;
+  color: $dark100-color;
+}
+
+.color-code {
+  font-family: Quicksand, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 29px;
+  letter-spacing: 0.15px;
+  color: $dark100-color;
+}
+
+.fonts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  max-width: 425px;
+  margin-top: 60px;
 }
 
 .font-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 45px;
-    margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  margin-top: 5px;
 
-    &__text-name {
-    }
+  &__text-name {
+  }
 
-    &__text-description {
-        max-width: 345px;
-        margin-left: 27px;
-    }
-
+  &__text-description {
+    max-width: 345px;
+    margin-left: 27px;
+  }
 }
 
 .H1-subclass-name {
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: right;
-    color: $dark25-color;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: $dark25-color;
 }
 
 .H2-subclass-name {
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 23px;
-    text-align: right;
-    color: $dark25-color;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: $dark25-color;
 }
 
 .H3-subclass-name {
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: $dark25-color;
-    margin-left: 12px;
-    margin-top: 3px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $dark25-color;
+  margin-left: 12px;
+  margin-top: 3px;
 }
 
 .Body-subclass-name {
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: right;
-    color:$dark25-color;
-    margin-top: -4px;
-    margin-left: -7px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: $dark25-color;
+  margin-top: -4px;
+  margin-left: -7px;
 }
 
 .H1-subclass-desc {
-    @include H1-text;
-    margin-top: 2px;
-    margin-left: 28px;
+  @include H1-text;
+  margin-top: 2px;
+  margin-left: 28px;
 }
 
 .H2-subclass-desc {
-    @include H2-text;
-    margin-left: 30px;
+  @include H2-text;
+  margin-left: 30px;
 }
 
 .H3-subclass-desc {
-    @include H3-text;
-    margin-left: 31px;
-    margin-top: 2px;
+  @include H3-text;
+  margin-left: 31px;
+  margin-top: 2px;
 }
 
 .Body-subclass-desc {
-    @include body-text;
-    max-width: 315px;
-    margin-top: -5px;
-    margin-left: 29px;
+  @include body-text;
+  max-width: 315px;
+  margin-top: -5px;
+  margin-left: 29px;
 }
