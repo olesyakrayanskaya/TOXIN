@@ -5,20 +5,14 @@ $dark75-color: rgba(31, 32, 65, 0.75);
 $dark50-color: rgba(31, 32, 65, 0.5);
 $dark25-color: rgba(31, 32, 65, 0.25);
 $dark5-color: rgba(31, 32, 65, 0.05);
-
-$xxs: 320px;
-$xs: 575px;
-$sm: 767px;
-$md: 991px;
-$lg: 1199px;
-$xl: 1440px;
+$primary-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 @mixin H1-text {
   font-family: Quicksand, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
   color: #1f2041;
 }
 
@@ -26,8 +20,8 @@ $xl: 1440px;
   font-family: Quicksand, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
   color: #1f2041;
 }
 
@@ -35,17 +29,17 @@ $xl: 1440px;
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   text-transform: uppercase;
   color: #1f2041;
 }
 
 @mixin body-text {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   color: rgba(31, 32, 65, 0.75);
 }
