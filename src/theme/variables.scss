@@ -5,7 +5,17 @@ $dark75-color: rgba(31, 32, 65, 0.75);
 $dark50-color: rgba(31, 32, 65, 0.5);
 $dark25-color: rgba(31, 32, 65, 0.25);
 $dark5-color: rgba(31, 32, 65, 0.05);
-$primary-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+
+@mixin primary-gradient {
+  background-image: -webkit-linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background-image: -moz-linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @mixin H1-text {
   font-family: Quicksand, Arial, sans-serif;

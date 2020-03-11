@@ -14,4 +14,8 @@ import './components/nav_header/nav_header'
 import './components/standart_nav_bar/standart_nav_bar'
 import './components/standart_logged_in_nav_bar/standart_logged_in_nav_bar'
 import './components/ui_kit_pages_template/ui_kit_pages_template'
+import './components/subscription_text_field/subscription_text_field'
+import './components/footer/footer'
+import './components/footer_social/footer_social'
+
 

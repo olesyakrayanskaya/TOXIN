@@ -1,0 +1,58 @@
+-
+  var foot_nav_list_array = [
+    {name:"About Us", link:"http://"},
+    {name:"News", link:"http://"},
+    {name:"Support", link:"http://"},
+    {name:"Products", link:"http://"},
+  ]
+
+-
+  var foot_about_list_array = [
+    {name:"Who we are", link:"http://"},
+    {name:"Our team", link:"http://"},
+    {name:"Careers", link:"http://"},
+    {name:"Investors", link:"http://"},
+  ] 
+
+-
+  var foot_support_list_array = [
+    {name:"Documentation", link:"http://"},
+    {name:"Community", link:"http://"},
+    {name:"Get in Touch", link:"http://"},
+  ]     
+
+
+footer.footer
+  .footer__container
+    .footer__content
+      .footer__logo-block
+        include ../logoTOXIN/logoTOXIN.pug
+        p.footer__logo-text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+      .footer__menu.footnav
+        .footnav__item
+          h3.foot-subtitle Navigation
+          ul.footnav__list
+            each val in foot_nav_list_array
+              li.footnav__li-item
+                a.footnav__link(href=val.link)= val.name
+        .footnav__item
+          h3.foot-subtitle About us
+          ul.footnav__list
+            each val in foot_nav_list_array
+              li.footnav__li-item
+                a.footnav__link(href=val.link)= val.name
+        .footnav__item
+          h3.foot-subtitle support
+          ul.footnav__list
+            each val in foot_nav_list_array
+              li.footnav__li-item
+                a.footnav__link(href=val.link)= val.name
+      .footer__subscribe-block
+        h3.foot-subtitle Subscribe to our newsletter
+        p Receive our latest news and promotions in your inbox!
+        include ../subscription_text_field/subscription_text_field.pug
+    .footer__copy-social-block
+      p.footer__copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
+      include ../footer_social/footer_social.pug
+      
+      

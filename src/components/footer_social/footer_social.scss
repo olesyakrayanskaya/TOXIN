@@ -1,0 +1,16 @@
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 7rem;
+
+  .gradient-icon {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.4375rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
