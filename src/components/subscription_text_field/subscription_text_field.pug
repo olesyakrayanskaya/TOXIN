@@ -1,4 +1,5 @@
-form.email-form(action="" method="")
-  input.email-form__text(type="email" name="email" placeholder="Email")
-  button.email-form__submit(type="submit")
-      <i class="material-icons email-form__icon">arrow_forward</i>
+mixin subscription-text-field(classInput, emailPlaceholder)
+  form.email-form(action="" method="")
+    input(class=classInput type="email" name="email" placeholder=emailPlaceholder)
+    button.email-form__submit(type="submit")
+        <i class="material-icons email-form__icon">arrow_forward</i>

@@ -5,10 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   background: #ffffff;
-  border: 1px solid $dark25-color;
+  border: 1.5px solid $dark25-color;
   box-sizing: border-box;
-  border-radius: 0.25rem;
-  width: 16.6875rem;
+  border-radius: 4px;
+  width: 16.25rem;
   height: 2.75rem;
 
   &__text {
@@ -26,6 +26,7 @@
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem; 
+    padding-left: 0.75rem;
   }
 
   &__submit {

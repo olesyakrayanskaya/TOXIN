@@ -1,3 +1,5 @@
+include ../subscription_text_field/subscription_text_field.pug
+
 -
   var foot_nav_list_array = [
     {name:"About Us", link:"http://"},
@@ -23,8 +25,8 @@
 
 
 footer.footer
-  .footer__container
-    .footer__content
+  .footer__content
+    .footer__container
       .footer__logo-block
         include ../logoTOXIN/logoTOXIN.pug
         p.footer__logo-text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
@@ -38,21 +40,21 @@ footer.footer
         .footnav__item
           h3.foot-subtitle About us
           ul.footnav__list
-            each val in foot_nav_list_array
+            each val in foot_about_list_array
               li.footnav__li-item
                 a.footnav__link(href=val.link)= val.name
         .footnav__item
           h3.foot-subtitle support
           ul.footnav__list
-            each val in foot_nav_list_array
+            each val in foot_support_list_array
               li.footnav__li-item
                 a.footnav__link(href=val.link)= val.name
       .footer__subscribe-block
         h3.foot-subtitle Subscribe to our newsletter
         p Receive our latest news and promotions in your inbox!
-        include ../subscription_text_field/subscription_text_field.pug
-    .footer__copy-social-block
+        +subscription-text-field("email-form__text", "Your email address")
+  .footer__copy-social-block
+    .copy-social-block-wrap
       p.footer__copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
       include ../footer_social/footer_social.pug
-      
-      
+
