@@ -17,5 +17,7 @@ import './components/ui_kit_pages_template/ui_kit_pages_template'
 import './components/subscription_text_field/subscription_text_field'
 import './components/footer/footer'
 import './components/footer_social/footer_social'
+import './components/footer_creative/footer_creative'
+
 
 
