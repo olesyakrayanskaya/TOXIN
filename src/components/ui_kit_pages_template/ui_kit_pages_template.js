@@ -1,1 +1,0 @@
-import './ui_kit_pages_template.scss';
