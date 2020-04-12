@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  meta(name="keywords", content= keywords )
+  meta(name="description", content= description )
+  title Headers and Footers
+body
+  .headers-footers 
+    include ../../../components/logo/logo.pug
+    .headers-footers__wrap.first
+      include ../../../components/standart_nav_bar/standart_nav_bar.pug
+    .headers-footers__wrap
+      include ../../../components/standart_logged_in_nav_bar/standart_logged_in_nav_bar.pug
+    .headers-footers__wrap
+      include ../../../components/footer/footer.pug
+    .headers-footers__wrap
+      include ../../../components/footer_creative/footer_creative.pug
+
+

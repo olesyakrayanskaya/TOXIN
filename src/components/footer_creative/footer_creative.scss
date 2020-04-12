@@ -12,11 +12,16 @@
 
   &__text {
     width: 35rem;
-    height: 3rem;
+    min-height: 3rem;
     text-align: center; 
     display: inline-block; 
     @include body-text; 
     margin-top: 1rem;
+
+    @media screen and (max-width: 550px) {
+      width: 100%;
+    }
+    
   }
 
   &__social {

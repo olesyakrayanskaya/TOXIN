@@ -2,7 +2,7 @@
 
 .standart-nav-bar {
   width: 100%;
-  height: 4.375rem;
+  min-height: 4.375rem;
   background: #ffffff;
   box-shadow: 0rem 0.625rem 1.25rem $dark5-color;
   margin: 0 auto;
@@ -16,6 +16,12 @@
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 0.625rem;
+    }
   }
 
   &__logo {

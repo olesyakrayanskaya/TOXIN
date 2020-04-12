@@ -2,11 +2,14 @@
 
 .footer {
   height: 27.625rem;
-  background: #FFFFFF;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  @media screen and (max-width: 600px) {
+    height: 100%;
+  }
 
   &__content {
     display: flex;
@@ -27,16 +30,27 @@
     margin: 0 auto;
     max-width: 1180px;
     width: 100%;
+
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      padding-bottom: 0.625rem;
+      padding-top: 0.625rem;
+    }
   }
 
   &__logo-block {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+
+    @media screen and (max-width: 600px) {
+      margin: 0 auto;
+      padding-bottom: 1.25rem;
+    }
   }
 
   &__logo-text {
-    @include body-text;    
+    @include body-text;
     padding-top: 1rem;
     width: 16.25rem;
   }
@@ -47,20 +61,23 @@
     padding-top: 0.3rem;
     margin-left: 2.875rem;
 
-      p {
-        @include body-text;
-        padding-top: 1.125rem;
-        padding-bottom: 1.375rem;
-        width: 12.25rem;
-      }
+    @media screen and (max-width: 600px) {
+      margin: 0 auto;
+    }
+
+    p {
+      @include body-text;
+      padding-top: 1.125rem;
+      padding-bottom: 1.375rem;
+      width: 12.25rem;
+    }
   }
 
   &__copy-social-block {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     height: 4.375rem;
     width: 100%;
-    
 
     .copy-social-block-wrap {
       max-width: 1180px;
@@ -75,14 +92,20 @@
   }
 }
 
-
 .footnav {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 0.25rem;
   width: 40vw;
+
+  @media screen and (max-width: 900px) {
+    width: 50vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 95vw;
+  }
 
   &__item {
     display: flex;
@@ -94,14 +117,14 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  
+
   &__link {
     @include body-text;
     color: $dark50-color;
   }
 }
 
-.foot-subtitle{
+.foot-subtitle {
   @include H3-text;
 }
 
