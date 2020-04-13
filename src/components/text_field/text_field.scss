@@ -1,0 +1,24 @@
+@import "../../theme/variables.scss";
+
+.text-form__text {  
+  width: 20rem;
+  height: 2.75rem;
+  background: #ffffff;
+  border: 1px solid $dark25-color;
+  border-radius: 4px;
+  padding-left: 0.9375rem;
+  @include body-text;
+
+  &::-webkit-input-placeholder {    
+    @include body-text;
+    color: $dark25-color;
+  }
+
+  &:hover, &:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none;
+    @include body-text;
+  }
+
+
+}
