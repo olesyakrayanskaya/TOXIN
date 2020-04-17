@@ -1,0 +1,31 @@
+@import "../../theme/variables.scss";
+
+.dropdown-form__text {
+  width: 20rem;
+  height: 2.75rem;
+  background: #ffffff;
+  border: 1px solid $dark25-color;
+  border-radius: 4px;
+  padding-left: 0.9375rem;
+  @include body-text;
+  position: relative;
+
+  &::-webkit-input-placeholder {
+    @include body-text;
+  }
+}
+.dropdown-form::after {
+  content: "\e5cf";
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: $dark50-color;
+  top: 0.625rem;
+  left: 17.8125rem;
+  cursor: pointer;
+}
