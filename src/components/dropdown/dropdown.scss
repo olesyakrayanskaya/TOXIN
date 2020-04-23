@@ -14,9 +14,17 @@
     @include body-text;
   }
 }
-.dropdown-form::after {
-  content: "\e5cf";
+
+.dropdown-form__btn {
+  cursor: pointer;
   position: absolute;
+  border: none;
+  background: none;
+  top: 0.625rem;
+  left: 17.3125rem;
+}
+
+.material-icons {
   width: 2.75rem;
   height: 2.75rem;
   font-family: Material Icons;
@@ -25,7 +33,4 @@
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: $dark50-color;
-  top: 0.625rem;
-  left: 17.8125rem;
-  cursor: pointer;
 }

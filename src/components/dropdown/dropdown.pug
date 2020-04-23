@@ -1,3 +1,6 @@
-mixin dropdown(classInput, dropdownPlaceholder)
+mixin dropdown(classInput, dropdownPlaceholder, classButton)
   form.dropdown-form(action="" method="")
     input(class=classInput type="text" name="dropdowntext" placeholder=dropdownPlaceholder)
+    button(class=classButton)
+      span.material-icons expand_more
++dropdown("dropdown-form__text","Сколько гостей","dropdown-form__btn")
